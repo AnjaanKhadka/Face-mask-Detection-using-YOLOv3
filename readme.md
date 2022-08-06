@@ -1,4 +1,4 @@
-# YOLOv3 based Mask and non-mask identifier.
+# YOLOv3 based Mask and non-mask identifier
 
 ## About
 
@@ -42,4 +42,8 @@ Follow training steps as one by one from [Training_YOLOv3.ipynb](https://github.
 
 ### Outputs
 
-![test_on_video.py](https://github.com/AnjaanKhadka/Face-mask-Detection-using-YOLOv3/blob/master/images/result.jpg)
+#### Images
+
+![Tested on image](https://github.com/AnjaanKhadka/Face-mask-Detection-using-YOLOv3/blob/master/images/result.jpg)
+
+![Tested on video](https://github.com/AnjaanKhadka/Face-mask-Detection-using-YOLOv3/blob/master/images/result.jpg)
