@@ -2,6 +2,7 @@ import cv2
 import numpy as np 
 import pandas as pd
 from itertools import product
+import time
 
 # Calculating ratio of intersection of area with sum of areas. it is similar to IoU but calculations are faster as we need approx value only.
 def intersection(boxA,boxB):
@@ -50,7 +51,7 @@ def detect():
     layer_names = net.getLayerNames()
     output_layers = [layer_names[i-1] for i in net.getUnconnectedOutLayers()]
     # print(output_layers)
-
+    t = time.time()
     while True: 
         ret,img=cap.read()
         # img = cv2.resize(img, None, fx=0.6, fy=0.6)
@@ -94,13 +95,16 @@ def detect():
             img = cv2.rectangle(img,(x1,y1),(x2,y2),(255,0,0),2)
             img = cv2.putText(img,f"{obj_name} ({int(confidence*100)}% )",(x-5,y-5), font,0.7, (255,0,0), 2)
     
+        print(f"fps : {1/(time.time()-t)}")
+        t = time.time()
+    
         # if d == 1:
         #     break
         # img = cv2.resize(img,)   
         cv2.imshow('output',img)
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
-    
+        
     cap.release()
     cv2.destroyAllWindows()
     
