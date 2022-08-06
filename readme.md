@@ -46,4 +46,4 @@ Follow training steps as one by one from [Training_YOLOv3.ipynb](https://github.
 
 ![Tested on image](https://github.com/AnjaanKhadka/Face-mask-Detection-using-YOLOv3/blob/master/images/result.jpg)
 
-![Tested on video](https://github.com/AnjaanKhadka/Face-mask-Detection-using-YOLOv3/blob/master/video/result.mp4)
+https://github.com/AnjaanKhadka/Face-mask-Detection-using-YOLOv3/blob/master/video/result.mp4
