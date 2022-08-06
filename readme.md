@@ -28,5 +28,18 @@ Do follow following links for dataset, model, and trained weight file.
 
 Follow training steps as one by one from [Training_YOLOv3.ipynb](https://github.com/AnjaanKhadka/Face-mask-Detection-using-YOLOv3/blob/master/Training_YOLOv3.ipynb) file. ( Use of [Google colab](https://colab.research.google.com/) suggested )
 
+## Inference
 
+- To test on image execute [test_on_photo.py](https://github.com/AnjaanKhadka/Face-mask-Detection-using-YOLOv3/blob/master/test_on_photo.py) file.
 
+        python test_on_photo.py
+
+- To test on image execute [test_on_video.py](https://github.com/AnjaanKhadka/Face-mask-Detection-using-YOLOv3/blob/master/test_on_video.py) file.
+
+        python test_on_video.py
+
+## Results
+
+### Outputs
+
+![test_on_video.py](https://github.com/AnjaanKhadka/Face-mask-Detection-using-YOLOv3/blob/master/images/result.jpg)
